@@ -320,7 +320,7 @@ async function updateCookie(cookie, userMsg, cookieTime) {
 async function cookieFlow(cookie, userMsg, cookieTime) {
     try {
         const updateMsg = await updateCookie(cookie, userMsg, cookieTime);
-        await notify.sendNotify(updateMsg, `🎉 有人通过 https://jdck.ml 获取到Cookie啦\n\nCookie 如下\n\n${cookie}\n\n${userMsg ? '备注信息：' + userMsg : ''}`);
+        await notify.sendNotify(updateMsg, `🎉 有人通过 https://ck.howiehye.top 获取到Cookie啦\n\nCookie 如下\n\n${cookie}\n\n${userMsg ? '备注信息：' + userMsg : ''}`);
     } catch (err) {
         return '';
     }
